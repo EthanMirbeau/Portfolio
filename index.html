@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div id="top" class="logo">Mon Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#propos">À propos</a></li>
+                <li><a href="#experience">Expériences</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#veille">Veille Technologique</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="accueil">
+        <div class="code-background">
+            <pre><code id="code"></code></pre>
+        </div>
+        <div class="overlay">
+            <div class="overlay-code"></div>
+        </div>
+
+        <h1>Bienvenue<br>Je suis Ethan Mirbeau<br>en BTS SIO option SLAM</h1>
+        <p class="typed-text"><span id="typed"></span><span class="cursor">|</span></p>
+
+        <div class="btn-container">
+            <a href="https://github.com/EthanMirbeau" class="btn" target="_blank"><i class="fas fa-laptop-code"></i>
+                Voir mes projets</a>
+            <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Me contacter</a>
+        </div>
+    </section>
+
+    <section id="propos" class="propos">
+        <div class="conteneur-basique">
+            <div class="contenu-propos">
+                <h2>À propos de moi</h2>
+                <p>Je suis actuellement en deuxième année du BTS SIO option SLAM à l’Institut Limayrac. Ce BTS est un
+                    BTS
+                    Service
+                    Informatique aux organisation. Dans ce BTS Je suis amené à apprendre plusieurs sujet dans
+                    l'informatique comme le réseau informatique, le systeme informatique ainsi que le développement
+                    informatique sous forme de codage, mais également de l'apprentissage des bases de données.
+                    <br><br>Je suis particulièrement intéressé par la conception et le développement informatique.
+                </p>
+
+                <a href="CV/CV-Ethan Mirbeau-2025.pdf" class="btn" download><i class="fas fa-download"></i> Télécharger
+                    mon CV</a>
+            </div>
+            <div class="image-propos">
+                <img src="img/profil.jpg" alt="Photo de profil">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="conteneur-shadow">
+            <div class="contenu-experience">
+                <h2>Mes Expériences</h2>
+                <div class="timeline">
+                    <!-- Premier emploi -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Stagiaire Développement Web</h3>
+                            <p><strong>Entreprise Keiyo</strong> - Janvier 2025 - Fevrier 2025 - semi présentiel</p>
+                            <ul>
+                                <li>Création de sites web en CMS avec Elementor de wordpress</li>
+                                <li>Répondre aux besoins des clients avec des chiers des charges</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Deuxième emploi -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Développeur Full Stack</h3>
+                            <p><strong>Entreprise Site Protect</strong> - Mai 2024 - Juin 2024 - distancielle</p>
+                            <ul>
+                                <li>Application tablette a transfomer en site web</li>
+                                <li>Responsive</li>
+                                <li>Gérer un patrimoine informatique</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Troisième emploi -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Animateur BAFA CENTRE AERE</h3>
+                            <p><strong>Mairie de Saint-Jean</strong> - Juillet 2024 - Août 2024</p>
+                            <ul>
+                                <li>Animation et travail et travail d'équipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quatrième emploi -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content">
+                        <h3>Employé service restauration</h3>
+                        <p><strong>Mac Donald</strong> - Août 2022</p>
+                        <ul>
+                            <li>Cuisine et service client</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Cinquième emploi -->
+            <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <h3>Salarié agricole</h3>
+                    <p><strong>Exploitation Laurent Dalenc</strong> - Juillet 2021</p>
+                    <ul>
+                        <li>Gérer les hybrides</li>
+                        <li>Castration du maïs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="formation" class="experience">
+        <div class="conteneur-shadow">
+            <div class="contenu-formation">
+                <h2>Formation</h2>
+                <div class="timeline">
+                    <!-- Bachelor SI -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor SI</h3>
+                            <p><strong>Institut Limayrac - Toulouse</strong> - 2025 - 2026</p>
+                            <ul>
+                                <li>SI : Systèmes d'Information</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- BTS SIO -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>BTS SIO - Option SLAM</h3>
+                            <p><strong>Institut Limayrac - Toulouse</strong> - 2023 - 2025</p>
+                            <ul>
+                                <li>SIO : Service Informatique aux Organisations</li>
+                                <li>Option SLAM : Solutions Logicielles et Applications Métiers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Bac -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <h3>BAC STI2D (OPTION SIN)</h3>
+                            <p><strong>Lycée Déodat de Séverac - Toulouse</strong> - 2023</p>
+                            <ul>
+                                <li>STI2D : Sciences Technologiques de l’Industrie et du Développement Durable</li>
+                                <li>Option SIN : Système d'Information et Numérique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="projets">
+        <div class="conteneur-basique">
+            <div class="contenu-projets">
+                <h2>Mes Projets</h2>
+                <div class="projets-grille">
+                    <!-- Projet 1 -->
+                    <div class="projets-card">
+                        <img src="img/Rugby.jpg" alt="Projets 1">
+                        <div class="projets-overlay">
+                            <h3>Maison des Ligues</h3>
+                            <p>Site internet Maison des Ligues.</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="projets-card">
+                        <img src="img/FAQ.webp" alt="Projets 2">
+                        <div class="projets-overlay">
+                            <h3>FAQ</h3>
+                            <p>Site internet FAQ.</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="projets-card">
+                        <img src="img/FLASHMEAL.jpg" alt="Projets 3">
+                        <div class="projets-overlay">
+                            <h3>Flash Meal</h3>
+                            <p>Développement d'un site de restaurant.</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="projets-card">
+                        <img src="img/dino.png" alt="Projets 3">
+                        <div class="projets-overlay">
+                            <h3>Fantastic Dinosaurs</h3>
+                            <p>Transformation d'une appli tablette en site web.</p>
+                            <a href="https://fantastic-dinosaurs.com/" class="btn" target="_blank">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="projets-card">
+                        <img src="img/keiyo-blanc.png" alt="Projets 3">
+                        <div class="projets-overlay">
+                            <h3>Site internet</h3>
+                            <p>Création d'un site internet pour un particulié.</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="veille">
+        <div class="conteneur-shadow">
+            <div class="contenu-veille">
+                <h2>Veille Technologique</h2>
+                <p>La veille technologique est essentielle pour rester informé des dernières évolutions dans le monde de
+                    la technologie. Voici les principales sources que j'utilise pour assurer une surveillance continue
+                    et approfondie du secteur.</p>
+
+                <div class="sources">
+                    <h3>1. Flux RSS</h3>
+                    <p>L'agrégation d'articles via Feedly permet de suivre un grand nombre de sources d'information
+                        pertinentes en un seul endroit. Ce flux RSS me permet de consulter rapidement les nouvelles
+                        tendances et les mises à jour concernant la technologie.</p>
+                    <a href="https://feedly.com/i/my/me" class="btn-link" target="_blank">Accéder à mon flux RSS
+                        Feedly</a>
+                </div>
+
+                <div class="sources">
+                    <h3>2. Réseaux sociaux professionnels</h3>
+                    <p>Les réseaux sociaux professionnels sont un excellent moyen de suivre l'actualité en temps réel,
+                        de découvrir des publications d'experts du domaine, et de participer aux discussions autour des
+                        nouvelles technologies.</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com" class="btn-link" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com" class="btn-link" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <div class="sources">
+                    <h3>3. Sites et blogs de référence</h3>
+                    <p>Je consulte régulièrement plusieurs sites et blogs spécialisés pour obtenir des informations
+                        fiables et approfondies.</p>
+                    <ul>
+                        <li><a href="https://www.zdnet.fr" class="btn-link" target="_blank">ZDNet</a></li>
+                        <li><a href="https://www.lemondeinformatique.fr" class="btn-link" target="_blank">Le Monde
+                                Informatique</a></li>
+                        <li><a href="https://www.techcrunch.com" class="btn-link" target="_blank">TechCrunch</a></li>
+                    </ul>
+                </div>
+
+                <h3 class="veille-title">Principaux Sujets de ma Veille</h3>
+                <ul class="veille-list">
+                    <li class="veille-item">
+                        <strong>Actualités & Tendances</strong>: Les nouvelles tendances technologiques, comme l'IA, le
+                        cloud computing, et l'informatique quantique, transforment l'industrie informatique.
+                    </li>
+                    <li class="veille-item">
+                        <strong>Cybersécurité</strong>: La cybersécurité est un domaine clé avec des menaces de plus en
+                        plus sophistiquées. Il est essentiel de suivre l'évolution des techniques de hacking.
+                    </li>
+                    <li class="veille-item">
+                        <strong>Langages & Frameworks</strong>: Les langages et frameworks continuent d'évoluer, avec
+                        des tendances comme les langages polyvalents et les frameworks pour améliorer la rapidité et
+                        l'efficacité du développement.
+                    </li>
+                </ul>
+
+                <a href="#veille-synthese" class="btn" id="veille-synthese">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="competence" class="competence">
+        <div class="conteneur-basique">
+            <div class="contenu-competence">
+                <h2>Compétences</h2>
+                <div class="competences-list">
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>Connaissance approfondie du HTML pour créer des structures de pages web.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Maîtrise avancée du design responsive et des animations CSS.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Compétences solides en JavaScript pour rendre les sites dynamiques et interactifs.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <p>Développement d'applications robustes et évolutives en Java.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h3>PHP</h3>
+                        <p>Expérience avec la création d'applications dynamiques en PHP.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="devicon-c-plain"></i>
+                        </div>
+                        <h3>C</h3>
+                        <p>Développement de logiciels performants en langage C.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>CMS</h3>
+                        <p>Expérience dans la gestion de contenu avec divers CMS comme WordPress, Joomla, et Drupal.</p>
+                    </div>
+
+                    <div class="competence-item">
+                        <div class="competence-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Compétences avancées en gestion de bases de données avec MySQL.</p>
+                    </div>
+                </div>
+                <div class="competence-btn-container">
+                    <a href="path_to_your_excel_file.xlsx" class="btn" download>Télécharger le tableau des
+                        compétences</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="conteneur-shadow">
+            <h2>Contactez-moi</h2>
+            <p>Tu as un projet ou une question ? Envoie-moi un message et je reviendrai vers toi !</p>
+
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Ton nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ton prénom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ton email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Ton message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Suivez-moi sur</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_ethan_mrb_/" class="social-icon" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ethan-mirbeau-2675382a9/" class="social-icon"
+                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/EthanMirbeau" class="social-icon" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 par Mirbeau Ethan. Tous droits réservés.</p>
+                <a href="#top" class="btn-top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
