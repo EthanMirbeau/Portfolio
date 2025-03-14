@@ -109,11 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL'];",
         "skills.forEach(skill => console.log(`✔ Compétence acquise : ${skill} - Toujours en quête d'amélioration et d'innovation !`));",
         "",
-        "const projects = [",
-        "   { name: 'Site Vitrine', tech: ['HTML', 'CSS', 'JavaScript'] },",
-        "   { name: 'Application React', tech: ['React', 'Node.js', 'MongoDB'] },",
-        "   { name: 'Gestionnaire de Tâches', tech: ['Java', 'Spring Boot', 'MySQL'] }",
-        "];",
+        "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL']; skills.forEach(skill => console.log('Je maîtrise ' + skill + ' et je suis constamment à la recherche d'innovation.'));",
+        "",
         "projects.forEach(project => console.log(`🚀 Projet : ${project.name} | Technologies : ${project.tech.join(', ')}`));",
         "",
         "let updateCount = 0;",
@@ -124,10 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "}",
         "contactMe();",
         "",
-        "// Fin du script.",
-        "// N'hésitez pas à explorer mon portfolio et à me suivre pour voir mes dernières réalisations !"
+        "// N'hésitez pas à explorer mon portfolio et à me suivre pour voir mes dernières réalisations !",
+        "// Fin du script."
     ];
-    
+
 
     const codeElement = document.getElementById('code');
 
