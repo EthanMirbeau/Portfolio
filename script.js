@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /*** 1️ Preloader - Animation de chargement ***/
+    /*** Preloader - Animation de chargement ***/
     const preloader = document.getElementById("preloader");
     if (preloader) {
         window.addEventListener("load", function () {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 2️ Effet de texte dynamique (Machine à écrire) ***/
+    /*** Effet de texte dynamique (Machine à écrire) ***/
     const phrases = [
         "Passionné par le Web.",
         "Développeur web full stack.",
@@ -47,33 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(typeWriter, 500);
 
-    /*** 3️ Effet de scroll sur le header ***/
-    const header = document.querySelector("header");
-    if (header) {
-        window.addEventListener("scroll", function () {
-            header.classList.toggle("scrolled", window.scrollY > 50);
-        });
-    }
-
-    /*** 4️ Animation d'apparition au scroll ***/
-    function ajouterAnimationScroll(sectionSelector) {
-        const section = document.querySelector(sectionSelector);
-        if (!section) return;
-
-        function checkScroll() {
-            const triggerBottom = window.innerHeight * 0.8;
-            if (section.getBoundingClientRect().top < triggerBottom) {
-                section.classList.add("fade-in");
-            }
-        }
-
-        window.addEventListener("scroll", checkScroll);
-        checkScroll();
-    }
-
-    ["propos", "experience", "projets", "veille"].forEach(section => ajouterAnimationScroll(`.${section}`));
-
-    /*** 5 Validation du formulaire ***/
+    /*** Validation du formulaire ***/
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', function (event) {
@@ -90,7 +64,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 6 Défilement fluide vers le haut ***/
+    // Afficher le bouton lorsque l'utilisateur fait défiler la page
+window.addEventListener('scroll', function() {
+    const backToTop = document.querySelector('.btn-top');
+    if (window.scrollY > 200) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+    /*** Défilement fluide vers le haut ***/
     const backToTop = document.querySelector('.btn-top');
     if (backToTop) {
         backToTop.addEventListener('click', function (e) {
@@ -102,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 7 Affichage de lignes de code avec effet machine à écrire ***/
+    /***  Affichage de lignes de code avec effet machine à écrire ***/
     const codeLines = [
         "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous y découvrirez mon parcours, mes expériences, mes formations, mes projets réalisés,;",
         "ma veille technologique et mes compétences en développement.'); }",
