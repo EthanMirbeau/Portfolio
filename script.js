@@ -104,9 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*** 7 Affichage de lignes de code avec effet machine à écrire ***/
     const codeLines = [
-        "function greet(name) { console.log('Bonjour ' + name + ' ! Cette ligne est très longue pour tester comment elle se comporte sur une grande largeur de page, en espérant qu'elle s'étende correctement et remplisse l'espace.'); }",
+        "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous pourrez trouver mon parcours, mes expériences réalisées, mes formations, mes projets réalisés au cours de mes formations et de mes expériences, ma veille technologique et mes compétences.'); }",
         "",
-        "const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'Ruby', 'Go', 'TypeScript', 'Java', 'Swift', 'Kotlin']; skills.forEach(skill => console.log('I know ' + skill + ', and I am constantly learning more!');",
+        "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL']; skills.forEach(skill => console.log('Je connais ' + skill + ', et je suis constamment à la recherche d'innovation.'));",
         "",
         "let count = 0; setInterval(() => { console.log('Ligne de code #' + count++ + ' : Cette ligne de code est volontairement longue pour observer le comportement des longues lignes dans le code, et voir comment elle s'ajuste dans la page en largeur.'); }, 1000);",
         "",
@@ -118,8 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "for (let i = 0; i < 100; i++) { console.log('Ligne ' + i + ' : Voici une ligne de code supplémentaire pour voir comment elle se comporte lorsque nous ajoutons des lignes de plus en plus longues dans notre script.'); }",
         "",
         "// Fin du code.",
-        "// C'est tout pour l'instant, chaque ligne est bien ajustée pour s'étendre sur toute la largeur de la page."
-    ];
+        "// N'hésitez pas à me contacter pour plus d'informations ou autre !"
+    ];    
 
     const codeElement = document.getElementById('code');
 
