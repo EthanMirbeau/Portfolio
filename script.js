@@ -104,22 +104,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*** 7 Affichage de lignes de code avec effet machine à écrire ***/
     const codeLines = [
-        "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous pourrez trouver mon parcours, mes expériences réalisées, mes formations, mes projets réalisés au cours de mes formations et de mes expériences, ma veille technologique et mes compétences.'); }",
+        "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous y découvrirez mon parcours, mes expériences, mes formations, mes projets réalisés, ma veille technologique et mes compétences en développement.'); }",
         "",
-        "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL']; skills.forEach(skill => console.log('Je connais ' + skill + ', et je suis constamment à la recherche d'innovation.'));",
+        "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL'];",
+        "skills.forEach(skill => console.log(`✔ Compétence acquise : ${skill} - Toujours en quête d'amélioration et d'innovation !`));",
         "",
-        "let count = 0; setInterval(() => { console.log('Ligne de code #' + count++ + ' : Cette ligne de code est volontairement longue pour observer le comportement des longues lignes dans le code, et voir comment elle s'ajuste dans la page en largeur.'); }, 1000);",
+        "const projects = [",
+        "   { name: 'Site Vitrine', tech: ['HTML', 'CSS', 'JavaScript'] },",
+        "   { name: 'Application React', tech: ['React', 'Node.js', 'MongoDB'] },",
+        "   { name: 'Gestionnaire de Tâches', tech: ['Java', 'Spring Boot', 'MySQL'] }",
+        "];",
+        "projects.forEach(project => console.log(`🚀 Projet : ${project.name} | Technologies : ${project.tech.join(', ')}`));",
         "",
-        "// Code à afficher dans le terminal, chaque ligne est volontairement longue pour tester la largeur.",
-        "// Ligne après ligne, cela devrait permettre de remplir la page complètement si le texte est bien géré.",
-        "function displayCode() { console.log('Code qui défile... Chaque ligne est un test pour la longueur de la ligne dans un format défilant et large.'); }",
-        "displayCode();",
+        "let updateCount = 0;",
+        "setInterval(() => { console.log(`🔄 Mise à jour #${++updateCount} : Mon portfolio évolue avec de nouvelles compétences et projets !`); }, 5000);",
         "",
-        "for (let i = 0; i < 100; i++) { console.log('Ligne ' + i + ' : Voici une ligne de code supplémentaire pour voir comment elle se comporte lorsque nous ajoutons des lignes de plus en plus longues dans notre script.'); }",
+        "function contactMe() {",
+        "   console.log('📩 Contactez-moi pour toute collaboration ou échange technique !');",
+        "}",
+        "contactMe();",
         "",
-        "// Fin du code.",
-        "// N'hésitez pas à me contacter pour plus d'informations ou autre !"
-    ];    
+        "// Fin du script.",
+        "// N'hésitez pas à explorer mon portfolio et à me suivre pour voir mes dernières réalisations !"
+    ];
+    
 
     const codeElement = document.getElementById('code');
 
