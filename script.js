@@ -104,7 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*** 7 Affichage de lignes de code avec effet machine à écrire ***/
     const codeLines = [
-        "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous y découvrirez mon parcours, mes expériences, mes formations, mes projets réalisés, ma veille technologique et mes compétences en développement.'); }",
+        "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous y découvrirez mon parcours, mes expériences, mes formations, mes projets réalisés,;",
+        "ma veille technologique et mes compétences en développement.'); }",
         "",
         "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL'];",
         "skills.forEach(skill => console.log(`✔ Compétence acquise : ${skill} - Toujours en quête d'amélioration et d'innovation !`));",
@@ -117,18 +118,23 @@ document.addEventListener("DOMContentLoaded", function () {
         "projects.forEach(project => console.log(`🚀 Projet : ${project.name} | Technologies : ${project.tech.join(', ')}`));",
         "",
         "let updateCount = 0;",
-        "setInterval(() => { console.log(`🔄 Mise à jour #${++updateCount} : Mon portfolio évolue avec de nouvelles compétences et projets !`); }, 5000);",
+        "setInterval(() => { console.log(`🔄 Mise à jour #${++updateCount} : Mon portfolio évolue avec de nouvelles compétences, projets, formations et expériences !`); }, 500);",
         "",
         "function contactMe() {",
-        "   console.log('📩 Contactez-moi pour toute collaboration ou échange technique !');",
+        "   console.log('📩 N'hésitez pas ! Contactez-moi pour toute collaboration ou échange technique !');",
         "}",
         "contactMe();",
         "",
+        "// Mes projets open-source sur GitHub :",
+        "const githubProjects = ['Project A', 'Project B', 'Project C'];",
+        "githubProjects.forEach(project => console.log(`🌍 Code source ouvert : ${project} | Retrouvez-moi sur GitHub`));",
+    
         "// N'hésitez pas à explorer mon portfolio et à me suivre pour voir mes dernières réalisations !",
+        "// Contactez-moi également sur mes réseaux professionnels (LinkedIn, GitHub, etc.).",
         "// Fin du script."
     ];
 
-
+    
     const codeElement = document.getElementById('code');
 
     function typeEffect(lines, index = 0) {
