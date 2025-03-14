@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /*** 1️⃣ Preloader - Animation de chargement ***/
+    /*** 1️ Preloader - Animation de chargement ***/
     const preloader = document.getElementById("preloader");
     if (preloader) {
         window.addEventListener("load", function () {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 2️⃣ Effet de texte dynamique (Machine à écrire) ***/
+    /*** 2️ Effet de texte dynamique (Machine à écrire) ***/
     const phrases = [
         "Passionné par le Web.",
         "Développeur web full stack.",
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(typeWriter, 500);
 
-    /*** 3️⃣ Effet de scroll sur le header ***/
+    /*** 3️ Effet de scroll sur le header ***/
     const header = document.querySelector("header");
     if (header) {
         window.addEventListener("scroll", function () {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 4️⃣ Animation d'apparition au scroll ***/
+    /*** 4️ Animation d'apparition au scroll ***/
     function ajouterAnimationScroll(sectionSelector) {
         const section = document.querySelector(sectionSelector);
         if (!section) return;
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ["propos", "experience", "projets", "veille"].forEach(section => ajouterAnimationScroll(`.${section}`));
 
-    /*** 6️⃣ Validation du formulaire ***/
+    /*** 5 Validation du formulaire ***/
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', function (event) {
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 7️⃣ Défilement fluide vers le haut ***/
+    /*** 6 Défilement fluide vers le haut ***/
     const backToTop = document.querySelector('.btn-top');
     if (backToTop) {
         backToTop.addEventListener('click', function (e) {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 8️⃣ Affichage de lignes de code avec effet machine à écrire ***/
+    /*** 7 Affichage de lignes de code avec effet machine à écrire ***/
     const codeLines = [
         "function greet(name) { console.log('Bonjour ' + name + ' ! Cette ligne est très longue pour tester comment elle se comporte sur une grande largeur de page, en espérant qu'elle s'étende correctement et remplisse l'espace.'); }",
         "",
@@ -136,17 +136,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     typeEffect(codeLines);
-
-    /*** 9️⃣ Ouvrir un fichier Excel ***/
-    const btnOpenExcel = document.getElementById("openExcelBtn");
-    if (btnOpenExcel) {
-        btnOpenExcel.addEventListener("click", function () {
-            const filePath = 'chemin/vers/ton/fichier.xlsx'; // Remplace par le chemin réel du fichier Excel
-            const anchor = document.createElement("a");
-            anchor.href = filePath;
-            anchor.download = "competences.xlsx"; // Nom du fichier téléchargé
-            anchor.click();
-        });
-    }
-
-});
+})
