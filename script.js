@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /*** 1️⃣ Preloader - Animation de chargement ***/
+    /*** Preloader - Animation de chargement ***/
     const preloader = document.getElementById("preloader");
     if (preloader) {
         window.addEventListener("load", function () {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 2️⃣ Effet de texte dynamique (Machine à écrire) ***/
+    /*** Effet de texte dynamique (Machine à écrire) ***/
     const phrases = [
         "Passionné par le Web.",
         "Développeur web full stack.",
@@ -47,33 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(typeWriter, 500);
 
-    /*** 3️⃣ Effet de scroll sur le header ***/
-    const header = document.querySelector("header");
-    if (header) {
-        window.addEventListener("scroll", function () {
-            header.classList.toggle("scrolled", window.scrollY > 50);
-        });
-    }
-
-    /*** 4️⃣ Animation d'apparition au scroll ***/
-    function ajouterAnimationScroll(sectionSelector) {
-        const section = document.querySelector(sectionSelector);
-        if (!section) return;
-
-        function checkScroll() {
-            const triggerBottom = window.innerHeight * 0.8;
-            if (section.getBoundingClientRect().top < triggerBottom) {
-                section.classList.add("fade-in");
-            }
-        }
-
-        window.addEventListener("scroll", checkScroll);
-        checkScroll();
-    }
-
-    ["propos", "experience", "projets", "veille"].forEach(section => ajouterAnimationScroll(`.${section}`));
-
-    /*** 6️⃣ Validation du formulaire ***/
+    /*** Validation du formulaire ***/
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', function (event) {
@@ -90,7 +64,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 7️⃣ Défilement fluide vers le haut ***/
+    // Afficher le bouton lorsque l'utilisateur fait défiler la page
+window.addEventListener('scroll', function() {
+    const backToTop = document.querySelector('.btn-top');
+    if (window.scrollY > 200) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+    /*** Défilement fluide vers le haut ***/
     const backToTop = document.querySelector('.btn-top');
     if (backToTop) {
         backToTop.addEventListener('click', function (e) {
@@ -102,25 +86,39 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /*** 8️⃣ Affichage de lignes de code avec effet machine à écrire ***/
+    /***  Affichage de lignes de code avec effet machine à écrire ***/
     const codeLines = [
-        "function greet(name) { console.log('Bonjour ' + name + ' ! Cette ligne est très longue pour tester comment elle se comporte sur une grande largeur de page, en espérant qu'elle s'étende correctement et remplisse l'espace.'); }",
+        "function greet(name) { console.log('Bienvenue ' + name + ' sur mon portfolio ! Vous y découvrirez mon parcours, mes expériences, mes formations, mes projets réalisés,;",
+        "ma veille technologique et mes compétences en développement.'); }",
         "",
-        "const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'Ruby', 'Go', 'TypeScript', 'Java', 'Swift', 'Kotlin']; skills.forEach(skill => console.log('I know ' + skill + ', and I am constantly learning more!');",
+        "const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Java', 'C', 'CMS', 'MySQL', 'PL/SQL'];",
+        "skills.forEach(skill => console.log(`✔ Compétence acquise : ${skill} - Toujours en quête d'amélioration et d'innovation !`));",
         "",
-        "let count = 0; setInterval(() => { console.log('Ligne de code #' + count++ + ' : Cette ligne de code est volontairement longue pour observer le comportement des longues lignes dans le code, et voir comment elle s'ajuste dans la page en largeur.'); }, 1000);",
+        "const projects = [",
+        "   { name: 'Site Vitrine', tech: ['HTML', 'CSS', 'JavaScript'] },",
+        "   { name: 'Application React', tech: ['React', 'Node.js', 'MongoDB'] },",
+        "   { name: 'Gestionnaire de Tâches', tech: ['Java', 'Spring Boot', 'MySQL'] }",
+        "];",
+        "projects.forEach(project => console.log(`🚀 Projet : ${project.name} | Technologies : ${project.tech.join(', ')}`));",
         "",
-        "// Code à afficher dans le terminal, chaque ligne est volontairement longue pour tester la largeur.",
-        "// Ligne après ligne, cela devrait permettre de remplir la page complètement si le texte est bien géré.",
-        "function displayCode() { console.log('Code qui défile... Chaque ligne est un test pour la longueur de la ligne dans un format défilant et large.'); }",
-        "displayCode();",
+        "let updateCount = 0;",
+        "setInterval(() => { console.log(`🔄 Mise à jour #${++updateCount} : Mon portfolio évolue avec de nouvelles compétences, projets, formations et expériences !`); }, 500);",
         "",
-        "for (let i = 0; i < 100; i++) { console.log('Ligne ' + i + ' : Voici une ligne de code supplémentaire pour voir comment elle se comporte lorsque nous ajoutons des lignes de plus en plus longues dans notre script.'); }",
+        "function contactMe() {",
+        "   console.log('📩 N'hésitez pas ! Contactez-moi pour toute collaboration ou échange technique !');",
+        "}",
+        "contactMe();",
         "",
-        "// Fin du code.",
-        "// C'est tout pour l'instant, chaque ligne est bien ajustée pour s'étendre sur toute la largeur de la page."
+        "// Mes projets open-source sur GitHub :",
+        "const githubProjects = ['Project A', 'Project B', 'Project C'];",
+        "githubProjects.forEach(project => console.log(`🌍 Code source ouvert : ${project} | Retrouvez-moi sur GitHub`));",
+    
+        "// N'hésitez pas à explorer mon portfolio et à me suivre pour voir mes dernières réalisations !",
+        "// Contactez-moi également sur mes réseaux professionnels (LinkedIn, GitHub, etc.).",
+        "// Fin du script."
     ];
 
+    
     const codeElement = document.getElementById('code');
 
     function typeEffect(lines, index = 0) {
@@ -136,17 +134,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     typeEffect(codeLines);
-
-    /*** 9️⃣ Ouvrir un fichier Excel ***/
-    const btnOpenExcel = document.getElementById("openExcelBtn");
-    if (btnOpenExcel) {
-        btnOpenExcel.addEventListener("click", function () {
-            const filePath = 'chemin/vers/ton/fichier.xlsx'; // Remplace par le chemin réel du fichier Excel
-            const anchor = document.createElement("a");
-            anchor.href = filePath;
-            anchor.download = "competences.xlsx"; // Nom du fichier téléchargé
-            anchor.click();
-        });
-    }
-
-});
+})
